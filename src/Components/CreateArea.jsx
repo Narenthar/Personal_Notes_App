@@ -10,12 +10,19 @@ const newNote = {
     content : textarea
 }
 
+function submitNote(event){props.onAdd(newNote);
+    setTitle("")
+    setTextArea("")
+    event.preventDefault()
+    
+
+}
 
     return <div>
         <form>
             <input onChange={(event)=> setTitle(event.target.value)} name="title" placeholder="Enter a title" value={title} />
             <textarea onChange={(event)=>setTextArea(event.target.value)} name="textarea" placeholder="Enter the content..." rows="3" value={textarea} />
-            <button onClick={()=> {props.onAdd(newNote)}}>Add</button>
+            <button onClick={submitNote}>Add</button>
         </form>
     </div>
 }
