@@ -4,13 +4,13 @@ import Header from "./Header"
 import Footer from "./Footer"
 import Note from "./Note"
 import "./App.css"
-// import initial_notes from "../notes"
+import initial_notes from "../notes"
 import CreateArea from "./CreateArea"
 
 
 function App(){
 
-    const [notes, setNotes] = useState([])
+    const [notes, setNotes] = useState(initial_notes)
 
 
     function addNotes(newNote){
