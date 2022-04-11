@@ -7,3 +7,8 @@ const initial_notes = [
   ];
 
   export default initial_notes;
+
+  
+  
+
+  
